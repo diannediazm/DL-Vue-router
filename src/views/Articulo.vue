@@ -12,6 +12,7 @@
         </div>
     </div>
 </header>
+
 <article>
     <div class="container">
         <div class="row">
@@ -38,6 +39,7 @@
         </div>
     </div>
 </article>
+
 <footer>
     <div class="container">
         <div class="row">
@@ -52,3 +54,13 @@
         </div>
     </div>
 </footer>
+
+<script>
+export default {
+    name: 'Articulo'
+}
+</script>
+
+<style>
+
+</style>

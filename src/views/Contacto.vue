@@ -48,3 +48,13 @@
         </div>
     </div>
 </footer>
+
+<script>
+export default {
+    name: 'Contacto'
+}
+</script>
+
+<style>
+
+</style>

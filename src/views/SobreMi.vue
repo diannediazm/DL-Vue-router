@@ -34,3 +34,13 @@
         </div>
     </div>
 </footer>
+
+<script>
+export default {
+    name: 'SobreMi'
+}
+</script>
+
+<style>
+
+</style>

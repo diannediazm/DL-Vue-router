@@ -4,30 +4,16 @@
         <div class="container"><a class="navbar-brand">V8</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
             <div
                 class="collapse navbar-collapse" id="navbarResponsive">
-                <!-- MENU DE NAVEGACION -->
-                <ul class="nav navbar-nav ml-auto" id="menu-v8">
-                    <li class="nav-item" role="presentation">
-                      <!-- REEMPLAZAR CON ELEMENTO ROUTER LINK A CON RUTA NOMBRADA -->
-                      <a href="/">portada</a> 
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <!-- REEMPLAZAR CON ELEMENTO ROUTER LINK A CON RUTA NOMBRADA -->
-                      <a href="/sobremi">sobre mí</a> 
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <!-- REEMPLAZAR CON ELEMENTO ROUTER LINK A CON RUTA ESTÁTICA -->
-                      <a href="/">contacto</a> 
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <!-- REEMPLAZAR CON ELEMENTO ROUTER LINK A RUTA ESTÁTICA -->
-                      <a href="/post/1">último post</a> 
-                    </li>
-                </ul>
-        </div>
+                <div class="navbar-nav ml-auto">
+                      <router-link class="nav-link" :to="{name:'Portada'}">Portada</router-link>
+                      <router-link class="nav-link" :to="{name:'SobreMi'}">Sobre mi</router-link>
+                      <router-link class="nav-link" to="/contacto">Contacto</router-link>
+                      <router-link class="nav-link" to="/post/1">Blog</router-link>
+                </div>
+            </div>
         </div>
     </nav>
-    <!-- ROUTER VIEW QUE CARGARÁ LAS VISTAS (INICIO, SOBRE MÍ, CONTACTO, ETC.) -->
-    <!-- <router-view></router-view> -->
+    <router-view></router-view>
   </div>
   
 </template>
@@ -35,7 +21,7 @@
 <script>
 
 export default {
-name: 'App'
+
 }
 </script>
 

@@ -11,3 +11,13 @@
         </div>
     </div>
 </header>
+
+<script>
+export default {
+    name: 'NotFound'
+}
+</script>
+
+<style>
+
+</style>

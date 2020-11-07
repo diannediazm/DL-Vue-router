@@ -37,3 +37,14 @@
         </div>
     </div>
 </footer>
+
+
+<script>
+export default {
+    name: 'Portada'
+}
+</script>
+
+<style>
+
+</style>
