@@ -1,12 +1,12 @@
 <!-- CONTENIDO PARA LA VISTA DE PORTADA -->
 <template>
  <div> 
-    <header class="masthead" style="background-image:url('assets/img/home-bg.jpg');">
+    <header class="masthead-portada" style="background-image:url('assets/img/home-bg.jpg');">
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-lg-8 mx-auto">
-                    <div class="site-heading">
+                    <div class="site-heading-portada">
                         <h1>V8</h1><span class="subheading">Noticias y reseñas de automóviles</span></div>
                 </div>
             </div>
@@ -29,10 +29,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-lg-8 mx-auto">
-                    <ul class="list-inline text-center">
-                        <li class="list-inline-item"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></li>
-                        <li class="list-inline-item"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></li>
-                        <li class="list-inline-item"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-github fa-stack-1x fa-inverse"></i></span></li>
+                    <ul class="text-center">
+                        <li class="list-inline-item"><span class="fa-stack fa-lg"><font-awesome-icon :icon="['fas','circle']" size="xs" /><font-awesome-icon :icon="['fab','twitter']" size="2x"/></span></li>
+                        <li class="list-inline-item"><span class="fa-stack fa-lg"><font-awesome-icon :icon="['fas','circle']" size="xs" /><font-awesome-icon :icon="['fab','facebook']" size="2x"/></span></li>
+                        <li class="list-inline-item"><span class="fa-stack fa-lg"><font-awesome-icon :icon="['fas','circle']" size="xs" /><font-awesome-icon :icon="['fab','github']" size="2x"/></span></li>
                     </ul>
                     <p class="text-muted copyright">Copyright&nbsp;©&nbsp;V8 - 2018</p>
                 </div>
@@ -49,5 +49,19 @@ export default {
 </script>
 
 <style>
-
+.masthead-portada {
+    margin-top: 80px;
+    height: 400px;
+    background-repeat: no-repeat;
+    margin-left: 250px;
+}
+.site-heading-portada {
+    color: white;
+    margin-top: 170px;
+}
+.post-preview, .post-title, .post-subtitle {
+    margin-top: 50px;
+    margin-left: 35px;
+    color: darkgrey;
+}
 </style>

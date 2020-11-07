@@ -1,12 +1,12 @@
 <!-- CONTENIDO PARA LA VISTA DE CONTACTO -->
 <template>
     <div>
-        <header class="masthead" style="background-image:url('assets/img/contact-bg.jpg');">
+        <header class="contacto" style="background-image:url('assets/img/contact-bg.jpg');">
             <div class="overlay"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-10 col-lg-8 mx-auto">
-                        <div class="site-heading">
+                        <div class="site-heading-contacto">
                             <h1>Contacto</h1><span class="subheading"></span></div>
                     </div>
                 </div>
@@ -41,9 +41,9 @@
                 <div class="row">
                     <div class="col-md-10 col-lg-8 mx-auto">
                         <ul class="list-inline text-center">
-                            <li class="list-inline-item"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></li>
-                            <li class="list-inline-item"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></li>
-                            <li class="list-inline-item"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-github fa-stack-1x fa-inverse"></i></span></li>
+                            <li class="list-inline-item"><span class="fa-stack fa-lg"><font-awesome-icon :icon="['fas','circle']" size="xs" /><font-awesome-icon :icon="['fab','twitter']" size="2x"/></span></li>
+                            <li class="list-inline-item"><span class="fa-stack fa-lg"><font-awesome-icon :icon="['fas','circle']" size="xs" /><font-awesome-icon :icon="['fab','facebook']" size="2x"/></span></li>
+                            <li class="list-inline-item"><span class="fa-stack fa-lg"><font-awesome-icon :icon="['fas','circle']" size="xs" /><font-awesome-icon :icon="['fab','github']" size="2x"/></span></li>
                         </ul>
                         <p class="text-muted copyright">Copyright&nbsp;©&nbsp;V8 - 2018</p>
                     </div>
@@ -60,5 +60,10 @@ export default {
 </script>
 
 <style>
-
+.contacto {
+    background-size: cover;
+}
+.site-heading-contacto {
+    margin-top: 400px;
+}
 </style>

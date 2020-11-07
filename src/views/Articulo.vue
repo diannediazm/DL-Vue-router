@@ -1,7 +1,7 @@
 <!-- CONTENIDO PARA LA VISTA DE POST -->
 <template>
     <div>
-        <header class="masthead" style="background-image: url('/assets/img/chevrolet-blazer.jpg');">
+        <header class="masthead-article" style="background-image: url('/assets/img/chevrolet-blazer.jpg');">
             <div class="overlay"></div>
             <div class="container">
                 <div class="row">
@@ -47,9 +47,9 @@
                 <div class="row">
                     <div class="col-md-10 col-lg-8 mx-auto">
                         <ul class="list-inline text-center">
-                            <li class="list-inline-item"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></li>
-                            <li class="list-inline-item"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></li>
-                            <li class="list-inline-item"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-github fa-stack-1x fa-inverse"></i></span></li>
+                            <li class="list-inline-item"><span class="fa-stack fa-lg"><font-awesome-icon :icon="['fas','circle']" size="xs" /><font-awesome-icon :icon="['fab','twitter']" size="2x"/></span></li>
+                            <li class="list-inline-item"><span class="fa-stack fa-lg"><font-awesome-icon :icon="['fas','circle']" size="xs" /><font-awesome-icon :icon="['fab','facebook']" size="2x"/></span></li>
+                            <li class="list-inline-item"><span class="fa-stack fa-lg"><font-awesome-icon :icon="['fas','circle']" size="xs" /><font-awesome-icon :icon="['fab','github']" size="2x"/></span></li>
                         </ul>
                         <p class="text-muted copyright">Copyright&nbsp;©&nbsp;V8 - 2018</p>
                     </div>
@@ -66,5 +66,9 @@ export default {
 </script>
 
 <style>
+.masthead-article {
+    margin-top: 100px;
+    color:white;
+}
 
 </style>
